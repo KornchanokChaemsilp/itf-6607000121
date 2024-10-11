@@ -1,26 +1,81 @@
 *{
+    font-family: Roboto;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile{
+    width: 183px;
+    height: 183px;
+    background-image: url(https://i.shgcdn.com/0465384c-9563-417b-b638-517529f21c3c/-/format/auto/-/preview/3000x3000/-/quality/lighter/);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: relative;
+}
+.notify{
+    width: 28px;
+    height: 28px;
+    background-color: rgb(255, 60, 60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+}
+.notify p{
+    color: white;
+}
+.input{
+    border: none;
+    margin: 0 25px;
+    width: 250px;
+    height: 30px;
+    border-radius: 8px;
+    padding: 0 10px;
+    background-color: rgb(236, 235, 235);
+}
+.set-button{
+    border: none;
+    background-color: royalblue;
+    color: white;
+    height: 30px;
+    border-radius: 8px;
+    padding: 0 1.5em;
+}
+.tel-input-container{
+    display: flex;
+    gap: 25px;
+}
+.tel-input-container input{
     margin: 0;
 }
-.navbar{
-    display: flex;
-    flex-direction: row;
-    background-color: darkblue;
-    padding: 5px 20px;
-    column-gap: 5px;
-    justify-content: space-between;
+.tel-table {
+    margin-top: 25px;
+    border-spacing: 0;
 }
-.nav-item{
-    color: aliceblue;
-    font-family: monospace;
+.tel-table th {
+    font-size: medium;
+    width: 250px;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    background-color: lightgrey;
+    border-bottom: 1px solid rgb(101, 101, 101);
+    padding: 0;
+    padding-left: 15px;
+    text-align: left;
 }
-.nav-item-container{
-    display: flex;
-    column-gap: 15px;
-}
-button{
-    background-color: pink;
-    border: none;
-    color: black;
-    border-radius: 5%;
-    font-family: monospace;
+.tel-table td {
+    font-size: medium;
+    box-sizing: border-box;
+    width: 250px;
+    height: 40px;
+    color: rgb(101, 101, 101);
+    background-color: white;
+    padding: 0 15px;
+    border-bottom: 1px solid lightgray;
 }
